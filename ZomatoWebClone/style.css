@@ -1,0 +1,513 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 1 Part CSS */
+
+header{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+nav::before{
+    background: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png") no-repeat center center/cover;
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 75%;
+    z-index: -1;
+}
+
+.navbar{
+    /* background-color: red; */
+    display: flex;
+    height: 50px;
+    align-items: center;
+    width: 1500px;   
+    margin: 10px auto;
+}
+.navbar ul li{
+    /* background-color: blue; */
+    display: inline;
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+}
+#item-1{
+    position: absolute;
+    cursor: pointer;
+    margin: auto 10px;
+    font-weight: bold;
+}
+#item-2{
+    position: absolute;
+    right: 250px;
+    cursor: pointer;
+}
+#item-3{
+    position: absolute;
+    right: 125px;
+    cursor: pointer;
+}
+.mainImg{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+.mainLogo{
+    width: 410px;
+    height: 80px;
+    
+}
+/* .head1{
+    color: white;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    font-size: 7em;
+    margin-top: 55px;
+    margin-bottom: -20px;
+    align-items: center;
+    font-family: 'Baloo Bhai 2', cursive;
+} */
+.head2{
+    color: white;
+    width: 1300px;
+    margin: auto;
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: lighter;
+}
+.search-box{
+    background-color: white;
+    width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    height: 70px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.location-box{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 4fr;
+    border-right: 1px solid grey;
+}
+.location-box img{
+    margin: auto ;
+    margin-left: 20px;
+    width: 30px;
+    height: 40px;
+    opacity: 0.6;
+}
+.location-box input{
+    border: none;
+    width: 175px;
+    font-size: 1.2rem;
+    margin: auto;
+    margin-left: 10px;
+    padding: 5px 5px;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.food-box{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr 6fr;
+}
+.food-box img{
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    transform: rotate(270deg);
+}
+.food-box input{
+    border: none;
+    margin-left: -20px;
+    font-size: 1.2rem;
+    padding: 5px 5px;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.locality{
+    margin-top: 175px;
+}
+
+/* 2 Part CSS */
+
+.nutrition{
+    display: grid;
+    border: 1px solid rgb(236, 226, 226);
+    height: 330px;
+    width: 740px;
+    margin-top: 50px;
+    margin-left:100px;
+    border-radius: 20px;
+    grid-template-rows: 3fr 1fr 1fr;
+}
+.nutrition img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+}
+.headingNut{
+    font-size: 2rem;
+    margin-top: 15px;
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.nutrition p{
+    font-size: 1.6rem;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.heading-locality{
+    margin: 60px auto;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.places{
+    display: grid;
+    border: 1px solid rgb(236, 226, 226);
+    height: 75px;
+    width: 600px;
+    margin-top: 50px;
+    margin-left:100px;
+    border-radius: 10px;
+    grid-template-columns: 4fr 1fr;
+    align-items: center; 
+    /* justify-content: center; */
+}
+.places h5{
+    font-size: 2rem;
+    margin: auto 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.places img{
+    margin: 0px auto;
+}
+
+/* 3 part CSS */
+
+.app{
+    display: flex;
+    height: 700px;
+    background-color: #FFFBF7;
+    /* background-color: black; */
+    margin: 190px auto;
+    margin-bottom: 0px;
+}
+.container{
+    display: flex;
+    margin: auto;
+    height: 600px;
+    width: 950px;
+    /* background-color: blue; */
+}
+.info h2{
+    margin-top: 40px;
+    font-size: 3.5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.info p{
+    margin-top: 35px;
+    font-size: 1.6rem;
+    font-family: 'Montserrat', sans-serif;
+}
+label{
+    font-size: 1.5rem;
+    margin-right: 70px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type=radio] {
+    margin-top: 40px;
+    border: 0px;
+    width: 4%;
+    height: 1.5em;
+}
+
+.EnterEmail{
+    margin-top: 20px;
+    width: 350px;
+    height: 60px;
+    border-radius: 7px;
+    outline: none;
+    border: 1px solid rgb(207, 207, 207);
+    font-size: 1.5rem;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn{
+    width: 210px;
+    margin-left: 10px;
+    height: 60px;
+    color: white;
+    background-color: rgb(219, 89, 89);
+    border-radius: 7px;
+    outline: none;
+    font-size: 1.3rem;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0.9;
+}
+
+.download1{
+    margin-top: 20px;
+    height: 50px;
+    width: 180px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.download2{
+    height: 50px;
+    width: 180px;
+    cursor: pointer;
+}
+
+/* 4th part CSS */
+
+.cuisine{
+    display: flex;
+    height: 800px;
+    align-items: center;
+    justify-content: center;
+    background-color: #FCFCFC;
+}
+.cuisine div{
+    height: 500px;
+    width: 1500px;
+}
+.cuisine div h1{
+    font-size: 2.7rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.cuisine div h3{
+    margin-top: 50px;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.cuisine div p{
+    margin-top: 30px;
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(134, 90, 90);
+    line-height: 40px;
+}
+
+.cuisine div h2{
+    margin-top: 100px;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    /* font-weight: bold; */
+}
+
+/* Footer  CSS */
+
+.second{
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F8F8F8;
+}
+.company{
+    display: flex;
+    height: 475px;
+    width: 1500px;
+    border-bottom: 2px solid rgb(207, 207, 207);
+}
+
+.company .images .img1{
+    display: flex;
+    width: 160px;
+    height: 42px;
+    position: absolute;
+    right: 320px;
+    margin-top: -47px;
+    border: 1px solid rgb(181, 181, 181);
+    align-items: center;
+    border-radius: 10px;
+    padding: 4px 3px;
+    font-family: 'Montserrat', sans-serif;    
+}
+.company .images .img1 .choose1{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin-left: 10px;
+}
+.company .images .img1 p{
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+.company .images .img1 .expand1{
+    position: absolute;
+    right: 20px;
+    transform: rotate(90deg);
+}
+
+.company .images .img2{
+    display: flex;
+    width: 190px;
+    height: 42px;
+    position: absolute;
+    right: 90px;
+    margin-top: -47px;
+    border: 1px solid rgb(181, 181, 181);
+    align-items: center;
+    border-radius: 10px;
+    padding: 4px 3px;
+    font-family: 'Montserrat', sans-serif;
+}
+.company .images .img2 .choose2{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
+.company .images .img2 p{
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+.company .images .img2 .expand2{
+    position: absolute;
+    right: 20px;
+    transform: rotate(90deg);
+}
+.companies{
+    height: 300px;
+    margin-left: -198px;
+    margin-top: 107px;
+    width: 300px;
+}
+.companies h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.companyNav ul li{
+    font-size: 19px;
+    list-style-type: none;
+    line-height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+}
+
+.forFoodies{
+    height: 300px;
+    /* margin-left: -198px; */
+    margin-top: 107px;
+    width: 300px;
+}
+.forFoodies h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.foodiesNav ul li{
+    font-size: 19px;
+    list-style-type: none;
+    line-height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+}
+
+.forRestaurants{
+    height: 300px;
+    /* margin-left: -198px; */
+    margin-top: 107px;
+    width: 300px;
+}
+.forRestaurants h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.restaurantNav ul li{
+    font-size: 19px;
+    list-style-type: none;
+    line-height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+}
+
+.forYou{
+    height: 300px;
+    /* margin-left: -198px; */
+    margin-top: 107px;
+    width: 300px;
+}
+.forYou h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.youNav ul li{
+    font-size: 19px;
+    list-style-type: none;
+    line-height: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+}
+.socialLinks{
+    height: 300px;
+    /* margin-left: -198px; */
+    margin-top: 107px;
+    width: 300px;
+}
+.socialLinks h1{
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.socialHandles .socialMedia{
+    margin: auto 7px;
+}
+.socialHandles .again{
+    margin-top: 15px;
+    height: 50px;
+    width: 180px;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #F8F8F8;
+    height: 100px;
+}
+
+footer div{
+    margin: auto;
+    font-size: 19px;
+    width: 1500px;
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+}
+
+
+
