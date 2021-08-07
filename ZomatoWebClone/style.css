@@ -137,7 +137,8 @@ header::before{
 /* 2 Part CSS */
 
 .locality{
-    margin-top: 113px;
+    height: 475px;
+    margin: 110px auto;
 }
 
 .nutrition{
